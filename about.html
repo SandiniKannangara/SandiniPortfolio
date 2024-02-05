@@ -1,0 +1,128 @@
+
+<!-- saved from url=(0087)file:///C:/Users/SANDINI%20KANNANGARA/Desktop/Portfolio/Code(portfolio)/About%20Me.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>About me page</title>
+<style>
+   p{
+   text-align: center;
+   padding-left: 40px;
+   padding-right: 40px;
+   padding-top: 30px; ;
+   font-size: larger;
+   font-weight: bold;
+   font-style: oblique;
+   }
+/*Split page into two parts*/
+
+ img {
+  width: 50px;
+  
+}
+.container{
+  width: 100%;
+  height: 40%;
+}
+/*Image slideshow code*/
+.slideshow-container {
+  max-width: 500px;
+  max-height: 400px;
+  position: absolute;
+  margin: auto;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/*Navigation bar */
+.topnav {
+        overflow: hidden;
+        background-color: #6aaee9;
+        height: 20%;
+      }     
+      .topnav a.active {
+        background-color: #120586;
+        color: white;
+      }
+      .topnav a:hover {
+        background-color: #ddd;
+        color: rgba(66, 115, 238, 0.884);
+      }
+      .topnav a {
+        float: right;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 8px 10px;
+        text-decoration: none;
+        font-size: 30px;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+            <div><p>Fuelled by a passion for Computer networking and Cyber Security, I'm a Computer Science student driven by my family and my school and a firm believer that [belief related to your field]. My academic journey has been enriched by the degree Bachalor of Science (Hons) in Computer Science which I undergraduate and networking course from Cisco networking Academy, also National vocational Qualification level 3 that allowed me to explore the depths of my fascination.
+
+                Beyond textbooks, I find myself thriving in Clubs like IEEE CS ,WIE groups in Kotelawala Defeence University and doing some sports like netball and swimming also.. My experience in IEEE CS group as a publicity team member and organizing committee member in WIE affenity group instilled in me how to communicate with each other, and a deep appreciation for getting chance to work with field professionals.
+                
+                Driven by a desire to become a networking engineer, I believe my Effective communication and writing skills,Analytical and problem-solving skills,Time management and organization skills,Adaptability and flexibility,Teamwork and collaboration  make me a valuable asset. I'm eager to learn, collaborate, and contribute to meaningful work because knowledge without application is simply potential.</p></div>
+   
+        </div>
+        <div class="container">
+        <div class="slideshow-container">
+           
+
+            <div class="mySlides fade">
+              <img src="Image 1.jpg" style="width:100%" style="position: absolute;">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="Image 3.jpg" style="width:100%"style="position: fixed;">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="Image 2.jpg" style="width:100% "style="position: absolute;">
+            </div>
+            <div class="mySlides fade">
+             <img src="Image 4.jpg" style="width:100%"style="position: absolute;">
+            </div>
+            </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+              </div>
+            <script>
+                let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+                </script>  
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a  class="active" href="about.html">About Me</a>
+    <a class="active" href="extracurriculum.html">Extracurriculum</a>
+    <a class="active" href="contact.html">Contact</a>
+  </div>
+</body></html>
